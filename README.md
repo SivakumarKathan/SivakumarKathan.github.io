@@ -1,4 +1,6 @@
 
-# H1 All is well !!!
+#  All is well !!!
 
-~H4 well done
+
+<p><a href="Index.html">Index</a>
+<p><a href="LotteryAnalysis.html">Lottery Analysis</a>

@@ -1,3 +1,4 @@
+
 <html>
 
 	<head>
@@ -7,6 +8,7 @@
 		<py-env>
 		-numpy
 		-matplotlib
+		-pandas
 		</py-env>
 	</head>
 
@@ -25,8 +27,35 @@
 		from js import my_string2
 		my_string = "Hello, first test !"
 		my_string2
+		
+		import pandas as pd
+		
+		my_dict = {"Siva":41, "Kayal":39,"Poonguzhali":8,"Arun":6}
+		data = pd.Dataframe.from_dict(my_dict, orient="index")
+		data
+		
 		</py-script>
 		
 	</body>
-
+	
 </html>
+
+<script>	
+	var my_string2 = "Pyscript is awesome";
+	function my_callback(){
+		document.getElementById("plot").style.display = "red";
+	}
+</script>
+
+<style type ="test/css">
+	body {
+		background-color: black;
+		color: white
+	}
+	
+	table, th, td {
+		border: 1px solid white;
+		padding: 10px
+		margin: 10px
+		}
+</style>

@@ -1,11 +1,32 @@
 <html>
 
-<body>
+	<head>
+		<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+		<script defer src="https://pyscript.net/latest/pyscript.js"></script>
+		
+		<py-env>
+		-numpy
+		-matplotlib
+		</py-env>
+	</head>
 
-<H2> Welcome to Siva's Thunderball Lottery analysis </H2>
+	<body>
+	
+	
+		<H1> Welcome to Siva's Thunderball Lottery analysis </H1>
 
-  <p>  <p>  <a href="Index.html">Index</a>
-    
-</body>
+		<p>  <p>  <a href="Index.html">Index</a>
+		
+		<h2> Lets start </h2>
+		<button onclick="my_callback()" id="btn">Click Me!</button>
+		<div id="plot"></div>
+		
+		<py-script output="plot">
+		from js import my_string2
+		my_string = "Hello, first test !"
+		my_string2
+		</py-script>
+		
+	</body>
 
 </html>

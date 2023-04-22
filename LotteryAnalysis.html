@@ -23,16 +23,17 @@
 		<button onclick="my_callback()" id="btn">Click Me!</button>
 		<div id="plot"></div>
 		
+<!--		my_string2		-->		
 		<py-script output="plot">
-		from js import my_string2
-		my_string = "Hello, first test !"
-		my_string2
+from js import my_string2
+my_string = "Hello, first test !"
+
 		
-		import pandas as pd
+import pandas as pd
 		
-		my_dict = {"Siva":41, "Kayal":39,"Poonguzhali":8,"Arun":6}
-		data = pd.Dataframe.from_dict(my_dict, orient="index")
-		data
+my_dict = {"Siva":41, "Kayal":39,"Poonguzhali":8,"Arun":6}
+data = pd.Dataframe.from_dict(my_dict, orient="index")
+data
 		
 		</py-script>
 		

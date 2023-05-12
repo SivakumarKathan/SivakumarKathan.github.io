@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    </head>
+<body>
+    <py-env>
+    - numpy
+    - pandas
+    </py-env>
+    <py-script>
+    
+	import pandas as pd
+	import numpy as np
+
+	df = pd.read_csv('https://raw.githubusercontent.com/SivakumarKathan/DataAnalysis/main/DrawHistory_TB_6May2023.csv')
+
+	#print(df.columns)
+
+	df.rename(columns={
+			'No.': 'No', 
+			' N1': 'N1'
+		}, inplace=True)
+
+	LatestDraw = df['No'].max()
+
+	print("Latest Draw No : ", LatestDraw)
+	Nbr_of_draws = 17
+	#print(df.tail(10))
+	
+    </py-script>
+</body>
+</html>
